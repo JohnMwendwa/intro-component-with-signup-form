@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <section class="section__one">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
 
-  Learn to code by watching others
+      <section class="section__two">
+        <div class="banner">
+          <h2>Try it free 7 days then $20/mo. thereafter</h2>
+        </div>
+        <form>
+          <div>
+            <input type="text" placeholder="First Name" />
+            <img
+              src="images/icon-error.svg"
+              alt="error icon"
+              class="error__icon"
+            />
+            <p class="error first_name"></p>
+          </div>
+          <div>
+            <input type="text" placeholder="Last Name" />
+            <img
+              src="images/icon-error.svg"
+              alt="error icon"
+              class="error__icon"
+            />
+            <p class="error last_name"></p>
+          </div>
+          <div>
+            <input type="email" placeholder="Email Address" />
+            <img
+              src="images/icon-error.svg"
+              alt="error icon"
+              class="error__icon"
+            />
+            <p class="error email"></p>
+          </div>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+          <div>
+            <input type="password" placeholder="Password" />
+            <img
+              src="images/icon-error.svg"
+              alt="error icon"
+              class="error__icon"
+            />
+            <p class="error password"></p>
+          </div>
+          <button>Claim your free trial</button>
+        </form>
 
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <p class="terms">
+          By clicking the button, you are agreeing to our
+          <a href="#">Terms and Services</a>
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
