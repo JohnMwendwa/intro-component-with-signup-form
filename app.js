@@ -91,5 +91,5 @@ function checkInputs() {
   setTimeout(() => {
     form.reset();
     submitButton.textContent = "Claim your free trial";
-  }, 3000);
+  }, 5000);
 }
